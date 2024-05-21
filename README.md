@@ -1,31 +1,23 @@
+# House Price Prediction
 
-# House Price Prediction Model
-This repository contains a simple House Price Prediction model implemented using Python. The project follows a structured process, including data cleaning, model development using Ridge regression, and the creation of a web-based user interface using Flask.
+This project implements machine learning algorithms to predict house prices based on various features such as number of bedrooms, number of bathrooms, size of the house, and zip code. It includes data preprocessing, model training, and evaluation using techniques like Linear Regression, Lasso Regression, and Ridge Regression.
 
-Key Components
-## Data Cleaning: The model utilizes a dataset from Kaggle (Seattle House Price Prediction). The dataset undergoes cleaning to handle missing values, categorical data, and other preprocessing steps.
+## Overview
 
-## Model Development: The machine learning model is implemented using Ridge regression, leveraging the scikit-learn library. The trained model is saved for later use.
+House price prediction is a common problem in the real estate industry and has significant implications for buyers, sellers, and real estate agents. Accurately predicting house prices can help buyers make informed decisions, sellers set appropriate listing prices, and agents provide valuable insights to their clients.
 
-## Flask Web Application: The project incorporates a Flask web application, providing a user-friendly interface for predicting house prices. Users can input details such as the number of bedrooms, bathrooms, house size, and zip code to receive a price prediction.
+As part of this project, I explored the impact of different regression techniques on the predictive performance of the models. The dataset used in this project contains information about various houses including their features and corresponding prices.
 
-Usage
-Clone the repository:
+## Algorithms Used
 
-git clone https://github.com/yourusername/HousePrice_Prediction.git
-cd HousePrice_Prediction
+- **Linear Regression**: This algorithm predicts house prices using a linear relationship between the features and the target variable.
+- **Lasso Regression**: Lasso Regression applies L1 regularization to the model, which helps in feature selection and prevents overfitting.
+- **Ridge Regression**: Ridge Regression applies L2 regularization to the model, which helps in reducing the impact of multicollinearity.
 
-Install dependencies:
+## Project Structure
 
-pip install -r requirements.txt
-
-Run the Flask application:
-
-
-python main.py
-
-Open your web browser and visit http://127.0.0.1:5000/ to interact with the House Price Prediction interface.
-
-Datasets Used
-Seattle House Price Prediction Dataset [Kaggle]
-Feel free to explore and adapt the project for your own use. If you have any questions or suggestions, please create an issue or reach out to yourusername. Happy coding!
+- `data/`: Contains the dataset used for training and testing.
+- `models/`: Saved models trained during the project.
+- `notebooks/`: Jupyter notebooks used for data analysis and model training.
+- `src/`: Source code files including data preprocessing, model training, and evaluation.
+- `requirements.txt`: Dependencies required to run the project.
